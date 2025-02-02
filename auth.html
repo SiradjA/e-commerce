@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up - Customize World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom-icons.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <!-- Notification System -->
+    <div class="notification">
+        <span class="icon-check icon-lg"></span>
+        <p></p>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="auth-background">
+        <div class="shape-blob"></div>
+        <div class="shape-blob"></div>
+        <div class="shape-blob"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="auth-container">
+        <!-- Logo Section -->
+        <div class="auth-logo">
+            <img src="assets/logo.png" alt="Customize World Logo">
+            <h1>Customize World</h1>
+        </div>
+
+        <!-- Form Container with Sliding Animation -->
+        <div class="form-container">
+            <!-- Login Form -->
+            <div class="auth-form login-form active">
+                <h2>Welcome Back</h2>
+                <p class="form-subtitle">Sign in to continue customizing your world</p>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <span class="icon-email input-icon"></span>
+                        <input type="email" id="loginEmail" required>
+                        <label for="loginEmail">Email Address</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="icon-lock input-icon"></span>
+                        <input type="password" id="loginPassword" required>
+                        <label for="loginPassword">Password</label>
+                        <span class="focus-border"></span>
+                        <button type="button" class="toggle-password">
+                            <span class="icon-eye"></span>
+                        </button>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="auth-button">
+                        <span class="button-text">Sign In</span>
+                        <span class="icon-arrow-right"></span>
+                    </button>
+
+                    <div class="social-auth">
+                        <p>Or sign in with</p>
+                        <div class="social-buttons">
+                            <button type="button" class="social-button google">
+                                <span class="icon-google"></span>
+                            </button>
+                            <button type="button" class="social-button facebook">
+                                <span class="icon-facebook"></span>
+                            </button>
+                            <button type="button" class="social-button twitter">
+                                <span class="icon-twitter"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="switch-form-text">
+                        Don't have an account? 
+                        <a href="#" class="switch-to-signup">Sign Up</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="auth-form signup-form">
+                <h2>Create Account</h2>
+                <p class="form-subtitle">Start your journey of customization</p>
+
+                <form id="signupForm">
+                    <div class="form-group">
+                        <span class="icon-user input-icon"></span>
+                        <input type="text" id="signupName" required>
+                        <label for="signupName">Full Name</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="icon-email input-icon"></span>
+                        <input type="email" id="signupEmail" required>
+                        <label for="signupEmail">Email Address</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="icon-lock input-icon"></span>
+                        <input type="password" id="signupPassword" required>
+                        <label for="signupPassword">Password</label>
+                        <span class="focus-border"></span>
+                        <button type="button" class="toggle-password">
+                            <span class="icon-eye"></span>
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="icon-lock input-icon"></span>
+                        <input type="password" id="confirmPassword" required>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <span class="focus-border"></span>
+                        <button type="button" class="toggle-password">
+                            <span class="icon-eye"></span>
+                        </button>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="terms-checkbox">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth-button">
+                        <span class="button-text">Create Account</span>
+                        <span class="icon-arrow-right"></span>
+                    </button>
+
+                    <div class="social-auth">
+                        <p>Or sign up with</p>
+                        <div class="social-buttons">
+                            <button type="button" class="social-button google">
+                                <span class="icon-google"></span>
+                            </button>
+                            <button type="button" class="social-button facebook">
+                                <span class="icon-facebook"></span>
+                            </button>
+                            <button type="button" class="social-button twitter">
+                                <span class="icon-twitter"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="switch-form-text">
+                        Already have an account? 
+                        <a href="#" class="switch-to-login">Sign In</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html> 

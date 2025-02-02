@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Customize the World</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/custom-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Notification System -->
+    <div class="notification success">
+      <span class="icon-check icon-lg icon-success"></span>
+      <p>Item added to cart successfully!</p>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo">
+          <h1>Customize World</h1>
+        </div>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">
+              <div class="icon-home-custom">
+                <div class="status-dot"></div>
+                <div class="chimney-smoke">
+                  <div class="smoke"></div>
+                  <div class="smoke"></div>
+                  <div class="smoke"></div>
+                </div>
+                <div class="home-icon">
+                  <div class="roof"></div>
+                  <div class="house-body"></div>
+                  <div class="door"></div>
+                  <div class="window"></div>
+                </div>
+              </div>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="design-lab.html">
+              <div class="design-lab-icon">
+                <div class="icon-base">
+                  <div class="icon-content">
+                    <div class="particles" id="design-lab-particles"></div>
+                    <div class="product-shape"></div>
+                    <div class="shine"></div>
+                  </div>
+                </div>
+              </div>
+              <span>Design Lab</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="products.html">
+              <span class="icon-tshirt icon-hover-slide"></span>
+              <span>Products</span>
+            </a>
+          </li>
+          <li class="cart-link">
+            <a href="cart.html">
+              <div class="cart-icon">
+                <div class="cart-body">
+                  <div class="cart-handle"></div>
+                </div>
+                <div class="cart-badge">0</div>
+              </div>
+              <span>Cart</span>
+            </a>
+          </li>
+        </ul>
+        <div class="user-menu">
+          <div class="user-menu">
+            <a href="auth.html" class="auth-links">
+              <button class="login-btn">
+                <span class="icon-user icon-hover-scale"></span>
+                Login
+              </button>
+              <button class="signup-btn">
+                Sign Up
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content products-page">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Our Products</h1>
+          <p>Discover our collection of premium customizable products. Create your unique style with our high-quality apparel.</p>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="products-section">
+        <div class="container">
+          <!-- Filter Bar -->
+          <div class="filter-bar">
+            <div class="search-box">
+              <span class="icon-search icon-md"></span>
+              <input type="text" placeholder="Search products...">
+            </div>
+            <div class="filter-options">
+              <div class="filter-group">
+                <label>
+                  <span class="icon-filter icon-md"></span>
+                  Filter by:
+                </label>
+                <select class="category-filter">
+                  <option value="All Categories">All Categories</option>
+                  <option value="Sweatshirts">Sweatshirts</option>
+                  <option value="Hoodies">Hoodies</option>
+                  <option value="T-Shirts">T-Shirts</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label>
+                  <span class="icon-sort icon-md"></span>
+                  Sort by:
+                </label>
+                <select class="sort-filter">
+                  <option value="Featured">Featured</option>
+                  <option value="Price: Low to High">Price: Low to High</option>
+                  <option value="Price: High to Low">Price: High to Low</option>
+                  <option value="Newest">Newest First</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Gray Crewneck Sweatshirt -->
+            <div class="product-card" data-aos="fade-up" data-product-id="gray-crewneck">
+              <div class="product-image">
+                <img src="assets/products/gray-crewneck.jpg" alt="Gray Crewneck Sweatshirt">
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <h3>Gray Crewneck Sweatshirt</h3>
+                    <p>Premium quality sweatshirt perfect for customization</p>
+                    <a href="design-lab.html" class="customize-btn">
+                      <span class="icon-palette icon-hover-scale"></span>
+                      Customize Now
+                    </a>
+                  </div>
+                </div>
+                <button class="wishlist-btn">
+                  <span class="icon-heart icon-hover-scale"></span>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Gray Crewneck Sweatshirt</h3>
+                  <div class="product-meta">
+                    <span class="price" data-price="5000">5,000 DA</span>
+                    <div class="sizes">
+                      <span class="size-label">Sizes:</span>
+                      <span class="size">S</span>
+                      <span class="size">M</span>
+                      <span class="size">L</span>
+                      <span class="size">XL</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a href="design-lab.html" class="action-btn primary">
+                    <span class="icon-palette icon-hover-scale"></span>
+                    Customize
+                  </a>
+                  <button class="action-btn secondary add-to-cart-btn">
+                    <span class="icon-cart icon-hover-scale"></span>
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Design Lab Product -->
+            <div class="product-card" data-aos="fade-up" data-product-id="custom-tshirt">
+              <div class="product-image">
+                <img src="assets/products/design-lab.jpg" alt="Custom T-Shirt Design">
+                <div class="product-overlay">
+                  <div class="overlay-content">
+                    <h3>Custom T-Shirt Design</h3>
+                    <p>Create your unique design with our design lab</p>
+                    <a href="design-lab.html" class="customize-btn">
+                      <span class="icon-palette icon-hover-scale"></span>
+                      Customize Now
+                    </a>
+                  </div>
+                </div>
+                <button class="wishlist-btn">
+                  <span class="icon-heart icon-hover-scale"></span>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <h3>Custom T-Shirt Design</h3>
+                  <div class="product-meta">
+                    <span class="price" data-price="2000">2,000 DA</span>
+                    <div class="sizes">
+                      <span class="size-label">Sizes:</span>
+                      <span class="size">S</span>
+                      <span class="size">M</span>
+                      <span class="size">L</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a href="design-lab.html" class="action-btn primary">
+                    <span class="icon-palette icon-hover-scale"></span>
+                    Customize
+                  </a>
+                  <button class="action-btn secondary add-to-cart-btn">
+                    <span class="icon-cart icon-hover-scale"></span>
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>We provide high-quality customizable apparel for those who want to express their unique style.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Design Lab</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <span class="icon-email icon-sm"></span>
+              contact@customizeworld.com
+            </li>
+            <li>
+              <span class="icon-phone icon-sm"></span>
+              +213 123 456 789
+            </li>
+            <li>
+              <span class="icon-location icon-sm"></span>
+              Algeria
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><span class="icon-facebook icon-hover-scale"></span></a>
+            <a href="#"><span class="icon-instagram icon-hover-scale"></span></a>
+            <a href="#"><span class="icon-twitter icon-hover-scale"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Customize World. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true
+      });
+    </script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/design-lab-icon.js"></script>
+    <script type="module" src="js/firebase-auth.js"></script>
+  </body>
+</html> 

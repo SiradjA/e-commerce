@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize the World - Your Custom Apparel Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- Notification System -->
+    <div class="notification success">
+        <span class="icon-check"></span>
+        <p>Item added to cart successfully!</p>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <span class="icon-close icon-hover-rotate"></span>
+            </button>
+            <div class="product-image">
+                <img src="assets/product-1.jpg" alt="Product">
+                <button class="wishlist-btn">
+                    <span class="icon-heart icon-hover-scale"></span>
+                </button>
+            </div>
+            <div class="product-details">
+                <h2>Custom T-Shirt</h2>
+                <p class="price">$29.99</p>
+                <div class="color-picker">
+                    <div class="color-option" style="background: #ff0000;"></div>
+                    <div class="color-option" style="background: #00ff00;"></div>
+                    <div class="color-option" style="background: #0000ff;"></div>
+                </div>
+                <div class="size-guide">
+                    <h3>Size Guide</h3>
+                    <table class="size-guide-table">
+                        <tr>
+                            <th>Size</th>
+                            <th>Chest</th>
+                            <th>Length</th>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>36"</td>
+                            <td>28"</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>38"</td>
+                            <td>29"</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>40"</td>
+                            <td>30"</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <h1>Customize World</h1>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li class="active">
+                    <a href="index.html">
+                        <div class="icon-home-custom">
+                            <div class="status-dot"></div>
+                            <div class="chimney-smoke">
+                                <div class="smoke"></div>
+                                <div class="smoke"></div>
+                                <div class="smoke"></div>
+                            </div>
+                            <div class="home-icon">
+                                <div class="roof"></div>
+                                <div class="house-body"></div>
+                                <div class="door"></div>
+                                <div class="window"></div>
+                            </div>
+                        </div>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="design-lab.html">
+                        <div class="design-lab-icon">
+                            <div class="icon-base">
+                                <div class="icon-content">
+                                    <div class="particles" id="design-lab-particles"></div>
+                                    <div class="product-shape"></div>
+                                    <div class="shine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span>Design Lab</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html">
+                        <span class="icon-tshirt icon-hover-slide"></span>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li class="cart-link">
+                    <a href="cart.html">
+                        <div class="cart-icon">
+                            <div class="cart-body">
+                                <div class="cart-handle"></div>
+                            </div>
+                            <div class="cart-badge">0</div>
+                        </div>
+                        <span>Cart</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="auth-links">
+                <a href="#" class="login-btn">
+                    <span class="icon-user"></span>
+                    <span>Login</span>
+                </a>
+                <a href="#" class="signup-btn">
+                    <span>Sign Up</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content home-page">
+        <!-- Video Showcase Section -->
+        <section class="video-showcase">
+            <div class="video-container" data-aos="fade-up">
+                <video autoplay loop muted playsinline class="mockup-video">
+                    <source src="assets/videos/hoodie-mockup.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay">
+                    <h2>Bring Your Designs to Life</h2>
+                    <p>Watch your creativity transform into wearable art</p>
+                    <a href="design-lab.html" class="cta-button">
+                        <span class="icon-palette"></span>
+                        Start Designing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="how-it-works">
+            <div class="section-header" data-aos="fade-up">
+                <h2>How It Works</h2>
+                <p>Create your custom apparel in three simple steps</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-container primary">
+                        <span class="icon-tshirt icon-feature icon-float"></span>
+                        <span class="step-number">1</span>
+                    </div>
+                    <h3>Choose Your Product</h3>
+                    <p>Select from our premium collection of customizable apparel</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-container primary">
+                        <span class="icon-palette icon-feature icon-float"></span>
+                        <span class="step-number">2</span>
+                    </div>
+                    <h3>Customize Design</h3>
+                    <p>Use our intuitive design tools to create your perfect look</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-container primary">
+                        <span class="icon-truck icon-feature icon-float"></span>
+                        <span class="step-number">3</span>
+                    </div>
+                    <h3>Order & Enjoy</h3>
+                    <p>Place your order and receive your custom creation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us-section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Choose Us</h2>
+                <p>Experience the difference with our premium customization service</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-container secondary">
+                        <span class="icon-gem icon-feature icon-glow"></span>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>High-quality materials and printing techniques for lasting results</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-container secondary">
+                        <span class="icon-magic icon-feature icon-glow"></span>
+                    </div>
+                    <h3>Easy Customization</h3>
+                    <p>Intuitive design tools for perfect personalization</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-container secondary">
+                        <span class="icon-truck icon-feature icon-glow"></span>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick processing and reliable shipping services</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-container secondary">
+                        <span class="icon-headset icon-feature icon-glow"></span>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Always here to help with your customization needs</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide high-quality customizable apparel for those who want to express their unique style.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><span class="icon-email icon-sm"></span> contact@customizeworld.com</li>
+                    <li><span class="icon-phone icon-sm"></span> +213 123 456 789</li>
+                    <li><span class="icon-location icon-sm"></span> Algeria</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><span class="icon-facebook icon-hover-scale"></span></a>
+                    <a href="#"><span class="icon-instagram icon-hover-scale"></span></a>
+                    <a href="#"><span class="icon-twitter icon-hover-scale"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Customize World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load our custom JavaScript -->
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/design-lab-icon.js"></script>
+    <script type="module" src="js/firebase-auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
+</body>
+</html> 

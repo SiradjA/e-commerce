@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Lab - Customize the World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <h1>Customize World</h1>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <div class="icon-home-custom">
+                            <div class="status-dot"></div>
+                            <div class="chimney-smoke">
+                                <div class="smoke"></div>
+                                <div class="smoke"></div>
+                                <div class="smoke"></div>
+                            </div>
+                            <div class="home-icon">
+                                <div class="roof"></div>
+                                <div class="house-body"></div>
+                                <div class="door"></div>
+                                <div class="window"></div>
+                            </div>
+                        </div>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="design-lab.html">
+                        <div class="design-lab-icon">
+                            <div class="icon-base">
+                                <div class="icon-content">
+                                    <div class="particles" id="design-lab-particles"></div>
+                                    <div class="product-shape"></div>
+                                    <div class="shine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span>Design Lab</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html">
+                        <span class="icon-tshirt icon-hover-slide"></span>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li class="cart-link">
+                    <a href="cart.html">
+                        <div class="cart-icon">
+                            <div class="cart-body">
+                                <div class="cart-handle"></div>
+                            </div>
+                            <div class="cart-badge">0</div>
+                        </div>
+                        <span>Cart</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="auth-links">
+                <a href="#" class="login-btn">
+                    <span class="icon-user"></span>
+                    <span>Login</span>
+                </a>
+                <a href="#" class="signup-btn">
+                    <span>Sign Up</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content design-lab-page">
+        <!-- Product Selection -->
+        <div class="product-selection">
+            <h3>Choose Your Product</h3>
+            <div class="product-categories">
+                <!-- Categories will be added dynamically -->
+            </div>
+            <div class="product-grid">
+                <!-- Products will be added dynamically -->
+            </div>
+        </div>
+
+        <!-- Design Lab Workspace -->
+        <div class="design-workspace">
+            <!-- Canvas Area -->
+            <div class="canvas-area">
+                <div class="product-preview">
+                    <img src="assets/tshirt-white.jpg" alt="Product Preview" id="productPreview">
+                    <div class="design-overlay" id="designOverlay"></div>
+                </div>
+                <div class="canvas-controls">
+                    <button class="view-btn active" data-view="front">
+                        <span class="icon-tshirt icon-hover-scale"></span>
+                        Front
+                    </button>
+                    <button class="view-btn" data-view="back">
+                        <span class="icon-tshirt icon-hover-rotate"></span>
+                        Back
+                    </button>
+                    <button class="zoom-btn" data-action="zoomIn">
+                        <span class="icon-zoom-in icon-hover-scale"></span>
+                    </button>
+                    <button class="zoom-btn" data-action="zoomOut">
+                        <span class="icon-zoom-out icon-hover-scale"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Design Tools Panel -->
+            <div class="design-tools-panel">
+                <div class="tools-section">
+                    <h3>Design Tools</h3>
+                    <div class="tool-buttons">
+                        <button class="tool-btn" data-tool="text">
+                            <span class="icon-text icon-hover-scale"></span>
+                            <span>Add Text</span>
+                        </button>
+                        <button class="tool-btn" data-tool="image">
+                            <span class="icon-image icon-hover-scale"></span>
+                            <span>Add Image</span>
+                        </button>
+                        <button class="tool-btn" data-tool="shapes">
+                            <span class="icon-shapes icon-hover-scale"></span>
+                            <span>Add Shapes</span>
+                        </button>
+                        <button class="tool-btn" data-tool="template">
+                            <span class="icon-template icon-hover-scale"></span>
+                            <span>Templates</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Text Editor Panel -->
+                <div class="editor-panel text-editor">
+                    <h4>Text Properties</h4>
+                    <div class="text-controls">
+                        <input type="text" placeholder="Enter text..." class="text-input">
+                        <select class="font-family">
+                            <option value="Arial">Arial</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Poppins">Poppins</option>
+                        </select>
+                        <div class="font-size-control">
+                            <input type="number" value="24" min="8" max="72">
+                            <input type="color" value="#000000">
+                        </div>
+                        <div class="text-style-buttons">
+                            <button class="style-btn" data-style="bold">
+                                <span class="icon-bold icon-hover-scale"></span>
+                            </button>
+                            <button class="style-btn" data-style="italic">
+                                <span class="icon-italic icon-hover-scale"></span>
+                            </button>
+                            <button class="style-btn" data-style="underline">
+                                <span class="icon-underline icon-hover-scale"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Editor Panel -->
+                <div class="editor-panel image-editor">
+                    <h4>Image Properties</h4>
+                    <div class="image-controls">
+                        <input type="file" accept="image/*" class="image-upload">
+                        <div class="image-adjustments">
+                            <div class="adjustment">
+                                <label>Brightness</label>
+                                <input type="range" min="0" max="200" value="100">
+                            </div>
+                            <div class="adjustment">
+                                <label>Contrast</label>
+                                <input type="range" min="0" max="200" value="100">
+                            </div>
+                            <div class="adjustment">
+                                <label>Saturation</label>
+                                <input type="range" min="0" max="200" value="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Layer Manager -->
+                <div class="layer-manager">
+                    <h4>Layers</h4>
+                    <div class="layers-list" id="layersList">
+                        <!-- Layers will be added dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Options -->
+        <div class="product-options">
+            <div class="option-section">
+                <h4>Size</h4>
+                <div class="size-picker">
+                    <button class="size-btn" data-size="S">S</button>
+                    <button class="size-btn" data-size="M">M</button>
+                    <button class="size-btn active" data-size="L">L</button>
+                    <button class="size-btn" data-size="XL">XL</button>
+                    <button class="size-btn" data-size="XXL">XXL</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="action-btn secondary" id="saveDesign">
+                <span class="icon-save icon-hover-scale"></span>
+                Save Design
+            </button>
+            <button class="action-btn primary" id="addToCart">
+                <span class="icon-cart icon-hover-scale"></span>
+                Add to Cart
+            </button>
+        </div>
+    </main>
+
+    <!-- Load Fabric.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+    <!-- Load our custom JavaScript -->
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/design-lab.js"></script>
+    <script src="js/design-lab-icon.js"></script>
+    <script type="module" src="js/firebase-auth.js"></script>
+</body>
+</html> 

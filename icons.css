@@ -1,0 +1,221 @@
+/* Icon Styles */
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Icons */
+.nav-icon {
+    font-size: 1.2rem;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 0.5rem;
+}
+
+.nav-links li.active .nav-icon {
+    background: var(--accent-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--primary-color);
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.feature-card:hover .feature-icon::after {
+    left: 100%;
+}
+
+/* Action Icons */
+.action-icon {
+    background: var(--accent-color);
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.action-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Social Icons */
+.social-icon {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    width: 45px;
+    height: 45px;
+    margin: 0 0.5rem;
+}
+
+.social-icon:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-5px) rotate(360deg);
+}
+
+/* Status Icons */
+.status-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.status-icon.success {
+    background: #4CAF50;
+    color: white;
+}
+
+.status-icon.warning {
+    background: #FFC107;
+    color: #333;
+}
+
+.status-icon.error {
+    background: #f44336;
+    color: white;
+}
+
+/* Tool Icons */
+.tool-icon {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.tool-icon:hover {
+    transform: rotate(15deg);
+}
+
+/* Notification Icons */
+.notification-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.notification-icon.success {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+.notification-icon.error {
+    background: rgba(244, 67, 54, 0.1);
+    color: #f44336;
+}
+
+/* Cart Icons */
+.cart-icon {
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    background: var(--accent-color);
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+/* User Menu Icons */
+.user-icon {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    margin-right: 0.8rem;
+}
+
+.theme-icon {
+    background: transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.theme-icon:hover {
+    transform: rotate(180deg);
+}
+
+/* Loading Icon */
+.loading-icon {
+    animation: spin 1s linear infinite;
+}
+
+/* Floating Icons */
+.float-icon {
+    position: absolute;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+} 
